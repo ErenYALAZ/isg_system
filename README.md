@@ -56,13 +56,3 @@ Maksimum esneklik, bağımsızlık ve hız hedeflenerek tamamen **Özel Framewor
 *   **Fonksiyonellik:** DOM manipülasyonu, asenkron modal işlemleri için Modern Vanilla JS. E-posta hizmetleri (SMTP) için PHPMailer.
 
 ---
-
-## 💼 Kariyer/CV Notu
-
-> **💡 Canlı Uygulama Ortamı (Production):**
-> Bu yazılım hobi amaçlı basit bir proje **değildir**. Tüm iş/müşteri ihtiyaçlarının toplanması, veri modeli mimarisi, güvenli oturum yönetimi ve kurumsal UI/UX tasarımı baştan sona tek başıma kurgulanmış olup; **şu anaktif olarak şirketin kurumsal serverlarında çalışan ve yüzlerce işlem gören kurumsal canlı bir sistemdir.** İş dünyasında gerçek bir soruna çözüm üretmek amacı gütmektedir.
-
-<br>
-<div align="center">
-  <i>Tasarlanan tüm satırlar, verimlilik ve inovasyon felsefesiyle yazılmıştır. ✨</i>
-</div>
