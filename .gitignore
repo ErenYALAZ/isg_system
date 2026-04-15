@@ -1,0 +1,42 @@
+# ==========================================
+# ISG Projesi - .gitignore
+# ==========================================
+
+# Geçici / Test PHP Dosyaları
+tmp_*.php
+test_*.php
+check_schema.php
+update_db.php
+
+# Yüklenen Dosyalar (uploads klasörü - büyük olabilir)
+uploads/
+uploads/*
+assets/uploads/
+assets/uploads/*
+
+# PHP Konfigürasyon & Hassas Dosyalar
+app/config/database.php
+app/config/*.env
+*.env
+.env
+
+# Log Dosyaları
+*.log
+logs/
+
+# OS Dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE Dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node Modules (varsa)
+node_modules/
+
+# Composer (varsa)
+vendor/

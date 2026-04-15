@@ -1,0 +1,74 @@
+:root {
+    /* Main Theme Variables - DARK (Default) */
+    --bg-main: #0b1120;
+    --bg-sidebar: #0f172a;
+    --bg-header: rgba(11, 17, 32, 0.6);
+    --bg-card: rgba(30, 41, 59, 0.4);
+    --bg-item: rgba(255, 255, 255, 0.02);
+    
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-m: #94a3b8; /* Fix for hardcoded invalid var across pages */
+    --text-inverse: #0f172a;
+    
+    --border-color: rgba(255, 255, 255, 0.06);
+    --accent: #3b82f6;
+    --glass-blur: blur(10px);
+    --shadow-card: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+[data-theme="light"] {
+    /* Main Theme Variables - LIGHT (Modernized) */
+    --bg-main: #f0f4f8; /* Softer, slightly cool pearl background */
+    --bg-sidebar: #ffffff;
+    --bg-header: rgba(255, 255, 255, 0.85);
+    --bg-card: rgba(255, 255, 255, 0.95);
+    --bg-item: #f8fafc;
+    
+    --text-main: #1e293b; /* Rich, elegant slate */
+    --text-muted: #64748b;
+    --text-m: #64748b; /* Fix for hardcoded invalid var across pages */
+    --text-inverse: #ffffff;
+    
+    --border-color: rgba(15, 23, 42, 0.06); /* Extremely subtle border */
+    --accent: #4f46e5; /* Modern Indigo */
+    --glass-blur: blur(25px);
+    --shadow-card: 0 18px 50px rgba(15, 23, 42, 0.04), 0 4px 15px rgba(15, 23, 42, 0.02); /* Multi-layered soft diffused shadow */
+}
+
+/* Base Body Transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle Button Style */
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.theme-toggle:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* --- VURGU ANİMASYONU --- */
+.highlight-focus {
+    box-shadow: 0 0 0 4px var(--accent) !important;
+    animation: pulseHighlight 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    z-index: 100 !important;
+}
+
+@keyframes pulseHighlight {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); box-shadow: 0 0 35px var(--accent) !important; }
+}
